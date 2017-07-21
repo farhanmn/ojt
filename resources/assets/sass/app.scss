@@ -274,4 +274,13 @@ $default-color : #0033A8;
     .active{
       font-weight: bold;
     }
+//custom trip summary
+    .radius{
+      border-radius: 0;
+    }
+    .hr {
+    height: 1px;
+    color: #333;
+    background-color: #333;
+    }
 
