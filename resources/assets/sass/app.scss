@@ -284,3 +284,24 @@ $default-color : #0033A8;
     background-color: #333;
     }
 
+//sw
+//kasih line yang bagian judul form, yg gradient diagonal
+.test {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0033a8+0,0033a8+50,ffa73d+50,2980b9+50,2980b9+100 */
+    background: #0033a8; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #0033a8 0%, #0033a8 50%, #ffa73d 50%, #2980b9 50%, #2980b9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #0033a8 0%,#0033a8 50%,#ffa73d 50%,#2980b9 50%,#2980b9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #0033a8 0%,#0033a8 50%,#ffa73d 50%,#2980b9 50%,#2980b9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0033a8', endColorstr='#2980b9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.connecting-line {
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 75%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+}
