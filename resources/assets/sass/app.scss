@@ -1,0 +1,215 @@
+ @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+ @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+$default-color : #0033A8;
+
+// general
+.btn-submit-bold {
+    font-weight: bold;
+}
+.str-line {
+    height: 10px;
+    border-bottom: 1px solid black;
+}
+
+@media( max-width : 480px ) {
+    .wizard {
+        width: 90%;
+        height: auto !important;
+    }
+
+    span.round-tab {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard .nav-tabs > li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard li.active:after {
+        content: " ";
+        position: absolute;
+        left: 35%;
+    }
+}
+
+//tab
+.tab-pane {
+    padding: 15px 0;
+}
+.tab-content{
+    padding:13px 3%;
+}
+.card {
+    background: #FFF none repeat scroll 0% 0%;
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  bottom: 20px;
+}
+.padding-top{
+    padding-top: 50px;
+}
+.nav-top{
+    margin-bottom: 0;
+    border-radius: 0;
+    min-height: 30px;
+}
+.pos{
+    position: static;
+    margin-bottom: -1px !important;
+    background-color : $default-color;
+}
+.top-menu {
+    color: #fff!important;
+}
+.a-top{
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+
+}
+.dropdown-menu-login {
+    width: 350px !important;
+    height: auto !important;
+}
+.pan {
+    border: none;
+    box-shadow: none;
+}
+.padding-form {
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+.padding-form-penumpang-mobile {
+    padding-right: 0px !important;
+    padding-left: 0px !important;   
+}
+#search {
+    padding-left: 6% !important;
+}
+#jumlahTotal1 {
+    width: 100%;
+    text-align: left;
+}
+#btnswap {
+    margin-top: 3.5%;
+}
+#dropdown-passenger {
+    min-width: 200px;
+    min-height: 200px;
+    margin-top: -1px;
+    padding: 15px;
+}
+
+//slider promo
+.carousel-inner{
+    width:auto;
+    height: 350px !important;
+}
+
+.carousel-inner-mobile{
+    width:auto;
+    max-height: 250px !important;
+}
+#why {
+    margin-top: 5%;
+}
+.logo-icon {
+    font-size: 80px!important;
+}
+
+//footer
+.kontenFooter {
+    display: block;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    color: #fff;
+}
+.kontenFooterTitle {
+    display: block;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    color: #fff;
+}
+.kontenFooter:hover {
+    display: block;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13.5px;
+}
+
+#gambarlogo {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.iconPembayaran {
+    border-radius: 3%;
+    width: 50px;
+    height: auto;
+}
+
+.iconMediaSosial {
+    border-radius: 20%;
+    width: 40px;
+    height: auto;
+}
+
+.footer{
+    background-color: $default-color;
+    color: white;
+    padding: 2%;
+}
+.circle {
+    background-color: #fff;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+//card
+.con {
+    width: 50%;
+}
+#containercon {
+    margin-top: 2%;
+}
+.panel-card {
+    height: 110px;
+    width: 290px;
+}
+.text-card {
+    margin-top: 4%;
+    margin-left: 6%;
+    word-spacing: 10px;
+    font-size: 13px;
+}
+.keterangan-card {
+    margin-left: 6%;
+    font-size: 12px;
+}
+.mulaidari-card {
+    margin-left: 6%;
+    margin-top: 24%;
+    font-size: 13px;
+}
+
+.iconpesawat-card {
+    width: 100%;
+    margin-top: 7%;
+}

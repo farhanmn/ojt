@@ -1,0 +1,173 @@
+/*biar full row nya satu layar*/
+.rowedit{margin-left: 0; margin-right: 0;}
+
+/*css edit fontsize tgl*/
+.fontsize1{font-size: 55%;}
+
+/*css judul*/
+.fontsize2{font-size: 80%;}
+
+/*cssmargintop bagian atas*/
+.margintop1{margin-top: 2%;}
+
+/*css btn pencarian*/
+#btnpencarian{margin-top: 4%; width: 90%; margin-bottom: 4%;}
+
+/*css nav tab*/
+.overidenavtab2 > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; border-radius: 0;}
+.overidenavtab2 > li > a { border-radius: 0 !important; border: none; color: #000; background: #fff;}
+.overidenavtab2 > li.active > a, .nav-tabs > li > a:hover { border: none;  border-radius: 0 !important; color: #000000 !important; background: #fff; }
+.overidenavtab2 > li > a::after { content: ""; background: #0033a8; border-radius: 0 !important; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+.overidenavtab2 > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.overidenavtab2  > li  {width: 50%;}
+
+/*css margin div mulai dari isi panel*/
+.margindiv{margin-top: 4%;}
+
+/*css edit padding biar full*/
+.editpadding{padding-left: 0; padding-right: 0;}
+
+/*css warna heading*/
+.warnaheading{background: #ffffff !important;}
+
+
+/*css border radius 0*/
+.radius{border-radius: 0;}
+
+/*css edit size text*/
+.editsizetext{font-size: 70%;}
+
+/*css harga*/
+/*#harga{margin-left: 2%;}*/
+
+/*css width masing2 kontent*/
+.widthharga{width: 18%;}
+.widthmaskapai{width: 23%;}
+.widthwaktu{width: 18%;}
+
+/*margin khusus awal filter biar tengah */
+.marginkhusus{margin-left: 4%;}
+
+/*css warna biru*/
+.warnabiru{color: #1e90ff;}
+
+
+/*padding khusus filter*/
+#xc{padding-right: 5px;}
+#xc2{padding-right: 5px;}
+
+/*css isi dari mbak yeyen*/
+#warna{color:#99F100;}
+.kota{
+ font-size:  80%;
+}
+.tanggal{
+ font-size:  55%;
+}
+
+.list1{
+ font-size:  70%;
+}
+
+#gambar{
+ height: 250%;
+ width: 250%;
+}
+.pointer{
+ cursor: pointer !important;
+}
+
+/*biar panel nya ga ada margin nya*/
+.panel{margin-bottom: 0;}
+
+/*buat border-top isi kontennya 0*/
+.bordertop{border-top: 0;}
+
+/*untuk edit bagian lama perjalanan detail*/
+.cobasss{
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 24%;
+  height: 10%;
+}
+
+/*edit margin nya biar rata(lama perjalanan detail)*/
+.editlamajalan{
+  margin-top: 13%;
+  margin-left: 5%;}
+
+/*edit margin lama jalan khusus transit*/
+.editlamajalant{
+  margin-top: 9%;
+  margin-left: 5%;}
+
+/*edit size xs4 biar muat*/
+.widthxs4{width: 25%;}
+
+/*css detail masing2*/
+.editdetailnya{background: #ffffff !important; border-top: 0;}
+
+/*css margin top isi biar ga mepet sama label detail pesawat*/
+.top{margin-top: 8%;}
+
+/*margintop untuk detail transit*/
+.toptransit{margin-top: 4%;}
+
+/*margin left buat text Detail penerbangan*/
+.p{margin-left: 2%;}
+
+/*css buat garis abu2 keterangan lama transit*/
+.overridecol2{ padding: 0 !important; width: 93% !important; margin-bottom: 2%; background: #808080;}
+
+/*ganti warna jadi putih*/
+.siputih{color: #ffffff;}
+
+/*css atur row*/
+.atur1{width: 60%; margin-left: 18%; margin-top: 3%;}
+.atur2{width: 65%; margin-left: 18%; margin-top: 3%;}
+
+/* Floating Button */
+.btn-group-xs .btn-fab{
+  position: fixed !important;
+  right: 29px;
+}
+.btn-group .btn-fab{
+  position: fixed !important;
+  right: 20px;
+}
+#main{
+  position: fixed !important;
+  bottom: 20px;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+ position: fixed !important;
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px;
+  font-size: 18px;
+  line-height: 1.50;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+/*kelas warna biru*/
+.warna{color: #0033a8;}
