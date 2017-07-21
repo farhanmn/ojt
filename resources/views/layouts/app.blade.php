@@ -957,7 +957,11 @@
         $('#konten6').on('show.bs.collapse','.collapse', function() {
             $('#konten6').find('.collapse.in').collapse('hide');
         });
-
+        
+        //accordion di bagasi
+        $('#accordion').on('show.bs.collapse','.collapse', function() {
+            $('#accordion').find('.collapse.in').collapse('hide');
+        });
     // true flight clone
     var badgeCount=[0,0];
     var allowed=[false,false];
