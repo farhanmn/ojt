@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="container">
+<div class="container margin5-top">
   <div class="col-md-8">
       <h4>Informasi Personal</h4>
     <div class="primary-blue line margin5-top"></div>
@@ -102,7 +102,7 @@
           </div>
       </div>
     </div><!-- ct panel -->
-    <button type="button" class="btn btn-default primary-yellow" style="width:100%" name="button">Simpan</button>
+    <button type="button" class="btn btn-default primary-yellow" style="width:100%; margin-bottom:30%" name="button">Simpan</button>
   </div><!-- ct col-md-8 -->
   <!-- change photo profil -->
   <div class="col-md-4 margin5-top">
