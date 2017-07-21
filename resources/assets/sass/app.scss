@@ -213,3 +213,65 @@ $default-color : #0033A8;
     width: 100%;
     margin-top: 7%;
 }
+// nad custom
+  //custom color
+    .primary-blue{
+      background-color: #0033a8 !important;
+      color: white !important;
+    }
+    .dark-blue{
+      background-color: #001F68 !important;
+      color: white;
+    }
+    .primary-yellow{
+      background-color: #FFA900 !important;
+      color: white;
+    }
+    .third-blue{
+      background-color: #1e90ff !important;
+      color: white;
+    }
+    .second-blue{
+      background-color: #0986FF !important;
+      color: white;
+    }
+    .grey{
+      background-color: #8f8f8f !important;
+      color: white;
+    }
+    .btn-primary-blue {
+    color: #fff;
+    background-color: #0033a8;
+    border-color: #0033a8; /*set the color you want here*/
+    }
+    .btn-primary-blue:hover, .btn-primary-blue:focus, .btn-primary-blue:active, .btn-primary-blue.active, .open>.dropdown-toggle.btn-primary-blue {
+        color: #fff;
+        background-color: #001F68;
+        border-color: #001F68; /*set the color you want here*/
+    }
+    .btn-primary-yel {
+    color: #fff;
+    background-color: #FFA900;
+    border-color: #FFA900; /*set the color you want here*/
+    }
+    .btn-primary-yel:hover, .btn-primary-yel:focus, .btn-primary-yel:active, .btn-primary-yel.active, .open>.dropdown-toggle.btn-primary-yel {
+        color: #fff;
+        background-color: #FB9703;
+        border-color: #FB9703; /*set the color you want here*/
+    }
+    // custom pembayaran keranjang + langsung
+    .margin5 {
+      margin: 5%;
+    }
+    .margin5-left{
+      margin-top: 3%;
+      margin-left: 5%;
+      margin-bottom: -3%;
+    }
+    .margin5-top{
+      margin-top: 3%;
+    }
+    .active{
+      font-weight: bold;
+    }
+
