@@ -39,7 +39,7 @@
       </div>
       <div class="col-xs-6 col-md-4">
         <div class="connecting-line"></div>
-        <button class="btn primary-blue btn-circle btn-lg" style="float:left">1</button>
+        <button class="btn btn-circle btn-lg" style="float:left; background-color: #2d8727; color: #fff">1</button>
         <button class="btn grey btn-circle btn-lg" style="float:right">2</button>
       </div>
       <div class="col-xs-6 col-md-4">
@@ -63,10 +63,13 @@
   <!-- Left Side -->
   <div class="container col-md-8 col-xs-10">
     <!-- Info Kontak -->
-    <div class="primary-blue line"></div>
-    <div class="panel panel-default form-control-non-radius">
+    <div class="test"><h5 style="padding: 2% 0 2% 7%; margin: 0;color: #fff">Informasi Kontak yang Dapat Dihubungi</h5></div>
+
+    <div class="panel panel-default form-control-non-radius" style="background-color: #efefef " >
       <div class="panel-body margin5-trbl">
-        <strong>Informasi Kontak yang Dapat Dihubungi</strong>
+
+        <strong></strong>
+
         <div class="container-fluid row margin5-top">
           <div class="col-md-2">
             <div class="row">
@@ -116,14 +119,12 @@
     </div>
 
     <!-- Citos Shield -->
-    <div class="primary-blue line"></div>
-    <div class="panel panel-default form-control-non-radius">
+    <div class="test"><h5 style="padding: 2% 0 2% 7%; margin: 0;color: #fff">Penumpang Dewasa 1</h5></div>
+    <div class="panel panel-default form-control-non-radius" style="background: #efefef">
 
       <!-- add child and inf -->
       <div class="panel-body margin5-trbl">
-        <strong>Penumpang Dewasa 1</strong>
         <div class="checkbox">
-          <label><input type="checkbox" id="same-contact">Sama dengan Kontak</label>
         </div>
         <div class="container-fluid row margin5-top">
           <div class="col-md-2">
@@ -152,34 +153,23 @@
         </div><!-- ct row 2 / baris 1 -->
         <!-- baris 2 -->
         <div class="container-fluid row margin5-top">
-          <div class="col-md-6">
+          <div class="col-md-12">
             <div class="row">
-              Kewarganegaraan
+              Nomor Identitas
             </div><!-- ct baris 1 -->
-            <div class="row">
-              <select class="form-control form-control-non-radius" id="country" name="country" style="width: 90%">
-
-              </select>
+            <div class="row" width="200px">
+              <input class="form-control form-control-non-radius" type="text" name="" value="">
             </div><!-- ct baris 2 -->
           </div><!-- ct col-md-6 / kolom 1 -->
-          <div class="col-md-6">
-            <div class="row">
-              Tanggal Lahir
-            </div>
-            <div class="row">
-              <input class="form-control form-control-non-radius" id="BoD-Adt" type="text" name="" value="">
-            </div>
-          </div>
         </div>
       </div> <!-- ct panel-body -->
 
     </div>
 
-    <div class="primary-blue line"></div>
-    <div class="panel panel-default form-control-non-radius">
+    <div class="test"><h5 style="padding: 2% 0 2% 7%; margin: 0;color: #fff">Penumpang Anak 2</h5></div>
+    <div class="panel panel-default form-control-non-radius" style="background: #efefef">
 
       <div class="panel-body margin5-trbl">
-        <strong>Penumpang Anak 1</strong>
         <div class="container-fluid row margin5-top">
           <div class="col-md-2">
             <div class="row">
@@ -207,17 +197,8 @@
         </div><!-- ct row 2 / baris 1 -->
         <!-- baris 2 -->
         <div class="container-fluid row margin5-top">
-          <div class="col-md-6">
-            <div class="row">
-              Kewarganegaraan
-            </div><!-- ct baris 1 -->
-            <div class="row">
-              <select class="form-control form-control-non-radius" id="country" name="country" style="width: 90%">
-
-              </select>
-            </div><!-- ct baris 2 -->
-          </div><!-- ct col-md-6 / kolom 1 -->
-          <div class="col-md-6">
+          
+          <div class="col-md-12">
             <div class="row">
               Tanggal Lahir
             </div>
@@ -230,11 +211,10 @@
 
     </div>
 
-    <div class="primary-blue line"></div>
-    <div class="panel panel-default form-control-non-radius">
+    <div class="test"><h5 style="padding: 2% 0 2% 7%; margin: 0;color: #fff">Penumpang Bayi 3</h5></div>
+    <div class="panel panel-default form-control-non-radius" style="background: #efefef">
 
       <div class="panel-body margin5-trbl">
-        <strong>Penumpang Bayi 1</strong>
         <div class="container-fluid row margin5-top">
           <div class="col-md-2">
             <div class="row">
@@ -262,17 +242,8 @@
         </div><!-- ct row 2 / baris 1 -->
         <!-- baris 2 -->
         <div class="container-fluid row margin5-top">
-          <div class="col-md-6">
-            <div class="row">
-              Kewarganegaraan
-            </div><!-- ct baris 1 -->
-            <div class="row">
-              <select class="form-control form-control-non-radius" id="country" name="country" style="width: 90%">
-
-              </select>
-            </div><!-- ct baris 2 -->
-          </div><!-- ct col-md-6 / kolom 1 -->
-          <div class="col-md-6">
+          
+          <div class="col-md-12">
             <div class="row">
               Tanggal Lahir
             </div>
@@ -285,7 +256,7 @@
 
       <!-- Button back -->
       <ul class="list-inline pull-right margin5-top">
-        <li><input type="submit" class="btn btn-primary form-control-non-radius primary-blue" style="width: 100px" value="Lanjut"></li>
+        <li><input type="submit" class="btn form-control-non-radius primary-yellow" style="width: 200px;" value="Lanjut"></li>
       </ul>
     </form>
 
@@ -295,7 +266,7 @@
 
   <!-- Right Side -->
   <div class="container col-md-4 col-xs-2">
-    <div class="panel panel-default form-control-non-radius">
+    <div class="panel panel-default form-control-non-radius" style="background: #efefef">
       <div class="panel-heading primary-blue form-control-non-radius">Tiket Keberangkatan</div>
       <div class="panel-body">
         <a data-toggle="collapse" href="#pergi1">
@@ -384,7 +355,7 @@
       </div>
     </div>
     <!-- Tiket kepulangan -->
-    <div class="panel panel-default form-control-non-radius">
+    <div class="panel panel-default form-control-non-radius" style="background: #efefef">
       <div class="panel-heading primary-blue form-control-non-radius">Tiket Kepulangan</div>
       <div class="panel-body">
         <a data-toggle="collapse" href="#pulang1">
