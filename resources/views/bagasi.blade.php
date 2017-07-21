@@ -9,8 +9,8 @@
       </div>
       <div class="col-xs-6 col-md-4">
         <div class="connecting-line"></div>
-        <button class="btn grey btn-circle btn-lg" style="float:left">1</button>
-        <button class="btn primary-blue btn-circle btn-lg" style="float:right">2</button>
+        <button class="btn btn-circle btn-lg" style="float:left; background-color: #2d8727; color: #fff">1</button>
+        <button class="btn btn-circle btn-lg" style="float:right; background-color: #2d8727; color: #fff">2</button>
       </div>
       <div class="col-xs-6 col-md-4">
       </div>
@@ -32,27 +32,22 @@
 
   <!-- Left Side -->
   <div class="container col-md-8 col-xs-10">
-    <div class="primary-blue line">
-    </div>
-    <div class="panel panel-default form-control-non-radius">
+    <div class="test"><h5 style="padding: 2% 0 2% 7%; margin: 0;color: #fff">Pilih Bagasi</h5></div>
+    <div id="accordion">
+    <div class="panel panel-default form-control-non-radius" style="background-color:#efefef">
       <div class="panel-body margin5">
-        <strong>Pilih Bagasi</strong>
-        <hr class="hr">
-        <a data-toggle="collapse" href="#penumpang1">
+        <a data-toggle="collapse" data-parent="#accordion" href="#penumpang1">
         <div>
-          Penumpang 1
+          <strong>Keberangkatan</strong>
           <span id="caretp1" class="caret pull-right"></span>
         </div></a>
 
         <!-- panel down -->
         <div id="penumpang1" class="panel-collapse collapse">
-          <div class="panel-body">
+          <div class="panel-body" style="background-color: #fff; margin-top: 2%">
             <div class="row"> <!-- 0 -->
               <div class="col-md-4">
-                Lion Air
-              </div>
-              <div class="col-md-8">
-                : &nbsp20 Kg
+                <strong style="color:#0033A8">Penumpang Dewasa 1</strong>
               </div>
             </div>
             <div class="row">
@@ -62,19 +57,31 @@
               <div class="col-md-8 margin2-top">
                 <div class="form-inline">
                   :&nbsp <select class="form-control form-control-non-radius" style="width: 50%">
-                    <option>Tidak ada</option>
-                    <option>10Kg (Rp 100.000)</option>
-                    <option>20Kg (Rp 250.000)</option>
+                    <option>20Kg (Gratis)</option>
+                    <option>30Kg (Rp 100.000)</option>
+                    <option>40Kg (Rp 250.000)</option>
                   </select>
                 </div>
               </div>
             </div>
-            <div class="row"> <!-- 1 -->
-              <div class="col-md-4 margin2-top">
-                Lion Air
+            <div class="row">
+              <div class="col-md-4 margin5-top">
+                Bagasi Lion Air
               </div>
               <div class="col-md-8 margin2-top">
-                : &nbsp20 Kg
+                <div class="form-inline">
+                  :&nbsp <select class="form-control form-control-non-radius" style="width: 50%">
+                    <option>20Kg (Gratis)</option>
+                    <option>30Kg (Rp 100.000)</option>
+                    <option>40Kg (Rp 250.000)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row"> <!-- 0 -->
+              <div class="col-md-4" style="margin-top: 3%">
+                <strong style="color:#0033A8">Penumpang Anak 1</strong>
               </div>
             </div>
             <div class="row">
@@ -84,9 +91,23 @@
               <div class="col-md-8 margin2-top">
                 <div class="form-inline">
                   :&nbsp <select class="form-control form-control-non-radius" style="width: 50%">
-                    <option>Tidak ada</option>
-                    <option>10Kg (Rp 100.000)</option>
-                    <option>20Kg (Rp 250.000)</option>
+                    <option>20Kg (Gratis)</option>
+                    <option>30Kg (Rp 100.000)</option>
+                    <option>40Kg (Rp 250.000)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 margin5-top">
+                Bagasi Lion Air
+              </div>
+              <div class="col-md-8 margin2-top">
+                <div class="form-inline">
+                  :&nbsp <select class="form-control form-control-non-radius" style="width: 50%">
+                    <option>20Kg (Gratis)</option>
+                    <option>30Kg (Rp 100.000)</option>
+                    <option>40Kg (Rp 250.000)</option>
                   </select>
                 </div>
               </div>
@@ -95,21 +116,55 @@
         </div> <!-- ct #penumpang1 -->
 
         <hr>
-        <a data-toggle="collapse" href="#penumpang2">
+        <a data-toggle="collapse" data-parent="#accordion" href="#penumpang2">
         <div>
-          Penumpang 2
+          <strong>Kepulangan</strong>
           <span class="caret pull-right"></span>
         </div></a>
 
         <!-- panel down -->
         <div id="penumpang2" class="panel-collapse collapse">
-          <div class="panel-body">
+          <div class="panel-body" style="background-color: #fff; margin-top: 2%">
             <div class="row"> <!-- 0 -->
               <div class="col-md-4">
-                Lion Air
+                <strong style="color:#0033A8">Penumpang Dewasa 1</strong>
               </div>
-              <div class="col-md-8">
-                : &nbsp20 Kg
+
+            </div>
+            <div class="row">
+              <div class="col-md-4 margin5-top">
+                Bagasi Lion Air
+              </div>
+              <div class="col-md-8 margin2-top">
+                <div class="form-inline">
+                  :&nbsp <select class="form-control form-control-non-radius" style="width: 50%">
+                    <option>20Kg (Gratis)</option>
+                    <option>30Kg (Rp 100.000)</option>
+                    <option>40Kg (Rp 250.000)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row"> <!-- 1 -->
+            </div>
+            <div class="row">
+              <div class="col-md-4 margin5-top">
+                Bagasi Sriwijaya
+              </div>
+              <div class="col-md-8 margin2-top">
+                <div class="form-inline">
+                  :&nbsp <select class="form-control form-control-non-radius" style="width: 50%">
+                    <option>20Kg (Gratis)</option>
+                    <option>30Kg (Rp 100.000)</option>
+                    <option>40Kg (Rp 250.000)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row"> <!-- 0 -->
+              <div class="col-md-4" style="margin-top: 3%">
+                <strong style="color:#0033A8">Penumpang Anak 1</strong>
               </div>
             </div>
             <div class="row">
@@ -119,31 +174,23 @@
               <div class="col-md-8 margin2-top">
                 <div class="form-inline">
                   :&nbsp <select class="form-control form-control-non-radius" style="width: 50%">
-                    <option>Tidak ada</option>
-                    <option>10Kg (Rp 100.000)</option>
-                    <option>20Kg (Rp 250.000)</option>
+                    <option>20Kg (Gratis)</option>
+                    <option>30Kg (Rp 100.000)</option>
+                    <option>40Kg (Rp 250.000)</option>
                   </select>
                 </div>
               </div>
             </div>
-            <div class="row"> <!-- 1 -->
-              <div class="col-md-4 margin2-top">
-                Sriwijaya
-              </div>
-              <div class="col-md-8 margin2-top">
-                : &nbsp20 Kg
-              </div>
-            </div>
             <div class="row">
               <div class="col-md-4 margin5-top">
-                Bagasi Sriwijaya
+                Bagasi Lion Air
               </div>
               <div class="col-md-8 margin2-top">
                 <div class="form-inline">
                   :&nbsp <select class="form-control form-control-non-radius" style="width: 50%">
-                    <option>Tidak ada</option>
-                    <option>10Kg (Rp 100.000)</option>
-                    <option>20Kg (Rp 250.000)</option>
+                    <option>20Kg (Gratis)</option>
+                    <option>30Kg (Rp 100.000)</option>
+                    <option>40Kg (Rp 250.000)</option>
                   </select>
                 </div>
               </div>
@@ -151,27 +198,26 @@
           </div>
         </div> <!-- ct #penumpang2 -->
       </div>
+    </div>
     </div> <!-- close tag panel default -->
 
     <!-- Citos Shield -->
-    <div class="primary-blue line"></div>
-    <div class="panel panel-default form-control-non-radius">
-      <div class="panel-body margin5">
-        <strong>Citos Shield</strong>
+    <div class="test"><h5 style="padding: 2% 0 2% 7%; margin: 0;color: #fff">Citos Shield (CTShield)</h5></div>
+    <div class="panel panel-default form-control-non-radius" style="background-color:#efefef">
+      <div class="panel-body" style="margin-top:1%; padding-top: 0%; margin-left: 5%">
         <div class="checkbox small margin5-top">
-          <label><input type="checkbox" value="">Citos Shield (CTShield)</label>
-          <strong><a id="tooltip" href="#" title="Citos Shield adalah asuransi......(more info, click)">Apa itu Citos Shield?</a></strong>
+          <label><input type="checkbox" value=""></label>
+          <strong><a padding="0" id="tooltip" href="#" title="Citos Shield adalah asuransi......(more info, click)">Apa itu Citos Shield?</a></strong>
         </div>
       </div>
     </div>
 
     <!-- Potongan Harga -->
-    <div class="primary-blue line"></div>
-    <div class="panel panel-default form-control-non-radius">
+    <div class="test"><h5 style="padding: 2% 0 2% 7%; margin: 0;color: #fff">Potongan Harga</h5></div>
+    <div class="panel panel-default form-control-non-radius" style="background-color:#efefef">
       <div class="panel-body margin5">
-        <strong>Potongan Harga</strong>
 
-        <div class="checkbox small" style="margin-top:3%">
+        <div class="checkbox small" style="margin-top:1%; padding-top: 0%">
           <label>
           <input type="checkbox" value=""> GUNAKAN HOT WALLET
           </label>
@@ -190,23 +236,20 @@
       </div>
     </div>
 
-    <div class="primary-blue line"></div>
-    <div class="panel panel-default form-control-non-radius">
-      <div class="panel-body margin5">
-        <strong>Apakah Anda yakin pesanan anda sudah benar?</strong>
+    
+    <div class="panel panel-default form-control-non-radius" style="background-color:#efefef">
+      <div class="panel-body margin5" style="margin-top: 1%; margin-bottom: 1%">
         <div class="checkbox small margin5-top">
           <label><input type="checkbox" value="">Saya yakin dan menyetujui segala syarat dan ketentuan yang berlaku</label>
         </div>
       </div>
 
     <!-- Button back -->
-    <ul class="list-inline pull-left margin5-top">
-        <li><a href="{{ url('/isi') }}"><button type="button" class="btn btn-primary form-control-non-radius primary-blue" style="width: 100px">Kembali</button></a></li>
-    </ul>
+
 
     <ul class="list-inline pull-right margin5-top">
-        <li><a href="{{ url('/isi') }}"><button type="button" class="btn btn-primary form-control-non-radius primary-blue" style="width: 200px">Tambahkan ke Keranjang</button></a></li>
-        <li><a href="{{ url('/bayar') }}"><button type="button" class="btn btn-primary form-control-non-radius primary-blue" style="width: 200px">Pesan Sekarang</button></a></li>
+        <li><a href="{{ url('/isi') }}"><button type="button" class="btn form-control-non-radius primary-yellow" style="width: 200px">Tambahkan ke Keranjang</button></a></li>
+        <li><a href="{{ url('/bayar') }}"><button type="button" class="btn form-control-non-radius primary-yellow" style="width: 200px">Pesan Sekarang</button></a></li>
     </ul>
     </div>
 
@@ -215,7 +258,7 @@
 
   <!-- Right Side -->
   <div class="container col-md-4 col-xs-2">
-    <div class="panel panel-default form-control-non-radius">
+    <div class="panel panel-default form-control-non-radius" style="background-color:#efefef">
       <div class="panel-heading primary-blue form-control-non-radius">Tiket Keberangkatan</div>
       <div class="panel-body">
         <a data-toggle="collapse" href="#pergi1">
@@ -302,7 +345,7 @@
       </div>
     </div>
     <!-- Tiket kepulangan -->
-    <div class="panel panel-default form-control-non-radius">
+    <div class="panel panel-default form-control-non-radius" style="background-color:#efefef">
       <div class="panel-heading primary-blue form-control-non-radius">Tiket Kepulangan</div>
       <div class="panel-body">
         <a data-toggle="collapse" href="#pulang1">
@@ -401,7 +444,7 @@
       </div>
       <!-- penumpang detail -->
     </div>
-    <div class="panel panel-default form-control-non-radius">
+    <div class="panel panel-default form-control-non-radius" style="background-color:#efefef">
       <div class="panel-heading primary-blue form-control-non-radius">Total Biaya Perjalanan</div>
       <div class="panel-body">
         <a data-toggle="collapse" href="#detail1">
