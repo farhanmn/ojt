@@ -27,6 +27,42 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/intlTelInput.js"></script>
+  <script>
+  $( function() {
+    var input = $("#phone"),
+    output = $("#output");
+
+      $("#phone").intlTelInput({
+        initialCountry: "auto",
+        geoIpLookup: function(callback) {
+          $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "";
+            callback(countryCode);
+          });
+        },
+        utilsScript: "js/utils.js" // just for formatting/placeholders etc
+      });
+
+      // listen to "keyup", but also "change" to update when the user selects a country
+      input.on("keyup change", function() {
+        var intlNumber = input.intlTelInput("getNumber");
+        if (intlNumber) {
+          output.text("International: " + intlNumber);
+        } else {
+          output.text("Please enter a number below");
+        }
+      });
+    } );
+  </script>
+
+  <script type="text/javascript">
+  //accordion di bagasi
+        $('#accordion').on('show.bs.collapse','.collapse', function() {
+            $('#accordion').find('.collapse.in').collapse('hide');
+        });
+</script>
 
   
 </body>
