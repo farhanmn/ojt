@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('content')
+<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/intlTelInput.js"></script>
     <script>
     $( function() {
       var input = $("#phone"),
@@ -141,7 +146,7 @@
             </div>
             </div>
           </div> <!-- ct col md-4 -->
-          <div class="col-md-10">
+          <div class="col-md-5">
             <div class="row">
               Nama Lengkap*
             </div>
@@ -150,18 +155,17 @@
             </div>
           </div>
           <!-- ct col-md-8 -->
-        </div><!-- ct row 2 / baris 1 -->
-        <!-- baris 2 -->
-        <div class="container-fluid row margin5-top">
-          <div class="col-md-12">
-            <div class="row">
-              Nomor Identitas
+
+          <div class="col-md-5">
+            <div class="row" style="margin-left: -4%">
+              Nomor Identitas*
             </div><!-- ct baris 1 -->
-            <div class="row" width="200px">
-              <input class="form-control form-control-non-radius" type="text" name="" value="">
+            <div class="row">
+              <input class="form-control form-control-non-radius" style="width: 97%; margin-left: 3%" type="text" name="" value="">
             </div><!-- ct baris 2 -->
           </div><!-- ct col-md-6 / kolom 1 -->
-        </div>
+        </div><!-- ct row 2 / baris 1 -->
+        <!-- baris 2 -->
       </div> <!-- ct panel-body -->
 
     </div>
@@ -185,7 +189,7 @@
             </div>
             </div>
           </div> <!-- ct col md-4 -->
-          <div class="col-md-10">
+          <div class="col-md-5">
             <div class="row">
               Nama Lengkap*
             </div>
@@ -194,19 +198,16 @@
             </div>
           </div>
           <!-- ct col-md-8 -->
+          <div class="col-md-5">
+            <div class="row" style="margin-left: -4%">
+              Tanggal Lahir*
+            </div><!-- ct baris 1 -->
+            <div class="row">
+              <input class="form-control form-control-non-radius" id="BoD-Chd" style="width: 97%; margin-left: 3%" type="text" name="" value="">
+            </div><!-- ct baris 2 -->
+          </div>
         </div><!-- ct row 2 / baris 1 -->
         <!-- baris 2 -->
-        <div class="container-fluid row margin5-top">
-          
-          <div class="col-md-12">
-            <div class="row">
-              Tanggal Lahir
-            </div>
-            <div class="row">
-              <input class="form-control form-control-non-radius" id="BoD-Chd" required type="text" name="" value="">
-            </div>
-          </div>
-        </div>
       </div> <!-- ct panel-body -->
 
     </div>
@@ -230,7 +231,7 @@
             </div>
             </div>
           </div> <!-- ct col md-4 -->
-          <div class="col-md-10">
+          <div class="col-md-5">
             <div class="row">
               Nama Lengkap*
             </div>
@@ -239,19 +240,16 @@
             </div>
           </div>
           <!-- ct col-md-8 -->
+          <div class="col-md-5">
+            <div class="row" style="margin-left: -4%">
+              Tanggal Lahir*
+            </div><!-- ct baris 1 -->
+            <div class="row">
+              <input class="form-control form-control-non-radius" id="BoD-Chd" style="width: 97%; margin-left: 3%" type="text" name="" value="">
+            </div><!-- ct baris 2 -->
+          </div><!-- ct col-md-6 / kolom 1 -->
         </div><!-- ct row 2 / baris 1 -->
         <!-- baris 2 -->
-        <div class="container-fluid row margin5-top">
-          
-          <div class="col-md-12">
-            <div class="row">
-              Tanggal Lahir
-            </div>
-            <div class="row">
-              <input class="form-control form-control-non-radius" id="BoD-Inf" type="text" required name="" value="">
-            </div>
-          </div>
-        </div>
       </div> <!-- ct panel-body -->
 
       <!-- Button back -->
@@ -266,198 +264,199 @@
 
   <!-- Right Side -->
   <div class="container col-md-4 col-xs-2">
-    <div class="panel panel-default form-control-non-radius" style="background: #efefef">
-      <div class="panel-heading primary-blue form-control-non-radius">Tiket Keberangkatan</div>
-      <div class="panel-body">
-        <a data-toggle="collapse" href="#pergi1">
-        <div class="col-md-10">
-          <strong>Lion Air</strong>
-          <strong class="pull-right">Rp. 400.000</strong>
-        </div></a>
-        <!-- button remove -->
+  <div id="accordion">
+    <div class="panel panel-default radius" style="background:#EFEFEF">
+      <div class="panel-body" style="color: #0033A8"><strong>KEBERANGKATAN</strong></div>
+      <center>
+      <div class="row" style="background:#fff; margin-left: 5%; margin-right: 5%">
+        <div class="col-md-5" style="margin-top: 2%; margin-bottom: 2%"><strong>JOG</strong></div>
         <div class="col-md-2">
-          <span class="caret pull-right"></span>
+          <img src="img/arroww.png" style="width:210%">
         </div>
+        <div class="col-md-5" style="margin-top: 2%"><strong>BDO</strong></div>
+      </div>
+      </center>
+      
+      <div class="panel-body">
+        <a data-toggle="collapse" data-parent="#accordion" href="#pesawat1">
+          <strong>Lion Air<span style="margin-left: 50%; margin-right: 5%">Rp 400.000</span></strong>
+          <span id="caretp1" class="caret"></span>
+        </a>
+          <p class="small">23.00 - 01.00<strong> (+ 1 hari)</strong></p>
+        <!-- <a class="small" data-toogle="modal" data-target="modalPesawat1" href="#">Detail Penerbangan</a> -->
+        <a data-target="#modalPesawat1" data-toggle="modal" class="MainNavText" id="MainNavHelp" href="#modalPesawat1">Detail Penerbangan</a>
+        <!-- <button type="button" class="btn small" data-toggle="modal" data-target="#modalPesawat1">Open Modal -->
+        <!-- </button> -->
+
+        <!-- Modal -->
+        <div id="modalPesawat1" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content radius">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <center><h4 class="modal-title" style="color: #0033A8">DETAIL PENERBANGAN</h4></center>
+              </div>
+              <div class="modal-body">
+                asdsf
+              </div>
+            </div>
+
+          </div>
+        </div>
+
 
         <!-- panel down -->
-        <div id="pergi1" class="panel-collapse collapse">
-          <div class="panel-body margin5-top" style="margin-top:5%">
-            <!-- icon -->
-            <div class="col-md-2" style="margin-left:-3%">
-              <div class="buled"></div>
-              <div class="garis-non-transit"></div>
-              <div class="buled primary-blue" style="margin-top:80px"></div>
+        <div id="pesawat1" class="panel-collapse collapse">
+          <div class="panel-body" style="background-color: #fff; margin-top: 2%">
+            <div class="row"> <!-- 0 -->
+              <div class="col-md-12">
+                <strong>Tarif</strong>
+              </div>
             </div>
-            <!-- content kota -->
-            <div class="col-md-4">
-                <div class="row">Jakarta</div>
-                <div class="row">CGK</div>
-                <div class="row">GA xxxx</div>
-                <div class="row margin8-top">&nbsp</div>
-                <div class="row">Yogyakarta</div>
-                <div class="row">JOG</div>
+            <div class="row margin5-top" style="margin-right: 0%; margin-left: 1%">
+                <span class="pull-left">Dewasa x1</span>
+                <span class="pull-right">Rp 1.500.000</span>
             </div>
-            <!-- content waktu -->
-            <div class="col-md-6">
-                <div class="row">&nbsp</div>
-                <div class="row">7 Juli 2017</div>
-                <div class="row">12.00</div>
-                <div class="row margin8-top">&nbsp</div>
-                <div class="row" style="margin-top:-12%;">&nbsp</div>
-                <div class="row">7 Juli 2017</div>
-                <div class="row">12.00</div>
+            <div class="row" style="margin-right: 0%; margin-left: 1%">
+                <span class="pull-left">Anak x1</span>
+                <span class="pull-right">Rp 1.500.000</span>
             </div>
-          </div>
-        </div> <!-- ct #panel pergi1 -->
+            <div class="row" style="margin-right: 0%; margin-left: 1%">
+                <span class="pull-left">Bayi x1</span>
+                <span class="pull-right">Rp 70.000</span>
+            </div>
+        </div> <!-- ct #penumpang1 -->
+      </div>
+      <br><p></p>
+      <!-- Pesawat 2 -->
+      <a data-toggle="collapse" data-parent="#accordion" href="#pesawat3">
+          <strong>Lion Air<span style="margin-left: 50%; margin-right: 5%">Rp 400.000</span></strong>
+          <span id="caretp1" class="caret"></span>
+        </a>
+          <p class="small">23.00 - 01.00<strong> (+ 1 hari)</strong></p>
+        <a href="#" class="small">Detail Penerbangan</a>
 
-        <hr>
-        <a data-toggle="collapse" href="#pesawat2">
-        <div class="col-md-10">
-          <strong>Garuda</strong>
-          <strong class="pull-right">Rp. 1.500.000</strong>
-        </div></a>
-        <!-- button remove -->
+        <!-- panel down -->
+        <div id="pesawat3" class="panel-collapse collapse">
+          <div class="panel-body" style="background-color: #fff; margin-top: 2%">
+            <div class="row"> <!-- 0 -->
+              <div class="col-md-12">
+                <strong>Tarif</strong>
+              </div>
+            </div>
+            <div class="row margin5-top" style="margin-right: 0%; margin-left: 1%">
+                <span class="pull-left">Dewasa x1</span>
+                <span class="pull-right">Rp 1.500.000</span>
+            </div>
+            <div class="row" style="margin-right: 0%; margin-left: 1%">
+                <span class="pull-left">Anak x1</span>
+                <span class="pull-right">Rp 1.500.000</span>
+            </div>
+            <div class="row" style="margin-right: 0%; margin-left: 1%">
+                <span class="pull-left">Bayi x1</span>
+                <span class="pull-right">Rp 70.000</span>
+            </div>
+        </div> <!-- ct #penumpang1 -->
+      </div>
+    </div>
+   <!-- ct panel default -->
+
+    <!-- Masuk ke Pesawat 3 -->
+    <div class="panel-body" style="color: #0033A8"><strong>KEPULANGAN</strong></div>
+      <center>
+      <div class="row" style="background:#fff; margin-left: 5%; margin-right: 5%">
+        <div class="col-md-5" style="margin-top: 2%; margin-bottom: 2%"><strong>BDO</strong></div>
         <div class="col-md-2">
-          <span class="caret pull-right"></span>
+          <img src="img/arroww.png" style="width:210%">
         </div>
+        <div class="col-md-5" style="margin-top: 2%"><strong>JOG</strong></div>
+      </div>
+      </center>
 
+      
+      <div class="panel-body">
+        <a data-toggle="collapse" data-parent="#accordion" href="#pesawat2">
+          <strong>Lion Air<span style="margin-left: 50%; margin-right: 5%">Rp 400.000</span></strong>
+          <span id="caretp1" class="caret"></span>
+        </a>
+          <p class="small">23.00 - 01.00<strong> (+ 1 hari)</strong></p>
+        <a href="#" class="small">Detail Penerbangan</a>
+        <p>
         <!-- panel down -->
         <div id="pesawat2" class="panel-collapse collapse">
-          <div class="panel-body margin5-top" style="margin-top:12%">
-            <!-- icon -->
-            <div class="col-md-2" style="margin-left:-3%">
-              <div class="buled"></div>
-              <div class="garis-non-transit"></div>
-              <div class="buled primary-blue" style="margin-top:80px"></div>
+          <div class="panel-body" style="background-color: #fff; margin-top: 2%">
+            <div class="row"> <!-- 0 -->
+              <div class="col-md-12">
+                <strong>Tarif</strong>
+              </div>
             </div>
-            <!-- content kota -->
-            <div class="col-md-4">
-                <div class="row">Jakarta</div>
-                <div class="row">CGK</div>
-                <div class="row">GA xxxx</div>
-                <div class="row margin8-top">&nbsp</div>
-                <div class="row">Yogyakarta</div>
-                <div class="row">JOG</div>
+            <div class="row margin5-top" style="margin-right: 0%; margin-left: 1%">
+                <span class="pull-left">Dewasa x1</span>
+                <span class="pull-right">Rp 1.500.000</span>
             </div>
-            <!-- content waktu -->
-            <div class="col-md-6">
-                <div class="row">&nbsp</div>
-                <div class="row">7 Juli 2017</div>
-                <div class="row">12.00</div>
-                <div class="row margin8-top">&nbsp</div>
-                <div class="row" style="margin-top:-12%;">&nbsp</div>
-                <div class="row">7 Juli 2017</div>
-                <div class="row">12.00</div>
+            <div class="row" style="margin-right: 0%; margin-left: 1%">
+                <span class="pull-left">Anak x1</span>
+                <span class="pull-right">Rp 1.500.000</span>
             </div>
-          </div>
-        </div> <!-- ct #panel pesawat2 -->
-
-      </div>
-    </div>
-    <!-- Tiket kepulangan -->
-    <div class="panel panel-default form-control-non-radius" style="background: #efefef">
-      <div class="panel-heading primary-blue form-control-non-radius">Tiket Kepulangan</div>
-      <div class="panel-body">
-        <a data-toggle="collapse" href="#pulang1">
-        <div class="col-md-10">
-          <strong>Lion Air</strong>
-          <strong class="pull-right">Rp. 400.000</strong>
-        </div></a>
-        <!-- button remove -->
-        <div class="col-md-2">
-          <span class="caret pull-right"></span>
+            <div class="row" style="margin-right: 0%; margin-left: 1%">
+                <span class="pull-left">Bayi x1</span>
+                <span class="pull-right">Rp 70.000</span>
+            </div>
         </div>
-
-        <!-- panel down -->
-        <div id="pulang1" class="panel-collapse collapse">
-          <center>
-            <div class="kotak">
-              <span style="margin-top:80px">Transit 1 jam 30 menit</span>
-            </div>
-          </center>
-          <div class="panel-body margin5-top" style="margin-top:5%">
-            <!-- icon -->
-            <div class="col-md-2" style="margin-left:-3%">
-              <div class="buled"></div>
-              <div class="garis-transit"></div>
-              <div class="buled primary-blue" style="margin-top:80px"></div>
-              <div class="garis-transit"></div>
-              <div class="buled primary-blue" style="margin-top:80px"></div>
-            </div>
-            <!-- content kota -->
-            <div class="col-md-4">
-                <div class="row">Yogyakarta</div>
-                <div class="row">JOG</div>
-                <div class="row">GA xxxx</div>
-                <div class="row margin8-top">&nbsp</div>
-                <div class="row">Bandung</div>
-                <div class="row">BDO</div>
-                <div class="row margin8-top" style="margin-top:60%">&nbsp</div>
-                <div class="row">Jakarta</div>
-                <div class="row">CGK</div>
-            </div>
-            <!-- content waktu -->
-            <div class="col-md-6">
-                <div class="row">&nbsp</div>
-                <div class="row">7 Agustus 2017</div>
-                <div class="row">12.00</div>
-                <div class="row margin8-top">&nbsp</div>
-                <div class="row" style="margin-top:-12%;">&nbsp</div>
-                <div class="row">7 Agustus 2017</div>
-                <div class="row">12.30</div>
-                <div class="row margin8-top">&nbsp</div>
-                <div class="row" style="margin-top:-12%;">&nbsp</div>
-                <div class="row">7 Agustus 2017</div>
-                <div class="row">13.10</div>
-            </div>
-          </div>
-        </div> <!-- ct #panel pesawat1 -->
-
-        <hr>
-        <a data-toggle="collapse" href="#pesawat4">
-        <div class="col-md-10">
-          <strong>Garuda</strong>
-          <strong class="pull-right">Rp. 1.500.000</strong>
-        </div></a>
-        <!-- button remove -->
-        <div class="col-md-2">
-          <span class="caret pull-right"></span>
-        </div>
-
+      </div> <!-- ct accordion pesawat 1 -->
+      <a data-toggle="collapse" data-parent="#accordion" href="#pesawat4">
+          <strong>Garuda Indonesia<span style="margin-left: 23%; margin-right: 5%">Rp 3.070.000</span></strong>
+          <span id="caretp1" class="caret"></span>
+      </a>
+          <p class="small">23.00 - 01.00<strong> (+ 1 hari)</strong></p>
+        
+        <a href="#" class="small">Detail Penerbangan</a>
         <!-- panel down -->
         <div id="pesawat4" class="panel-collapse collapse">
-          <div class="panel-body margin5-top" style="margin-top:12%">
-            <!-- icon -->
-            <div class="col-md-2" style="margin-left:-3%">
-              <div class="buled"></div>
-              <div class="garis-non-transit"></div>
-              <div class="buled primary-blue" style="margin-top:80px"></div>
+          <div class="panel-body" style="background-color: #fff; margin-top: 2%">
+            <div class="row"> <!-- 0 -->
+              <div class="col-md-12">
+                <strong>Tarif</strong>
+              </div>
             </div>
-            <!-- content kota -->
-            <div class="col-md-4">
-                <div class="row">Yogyakarta</div>
-                <div class="row">JOG</div>
-                <div class="row">GA xxxx</div>
-                <div class="row margin8-top">&nbsp</div>
-                <div class="row">Bandung</div>
-                <div class="row">BDO</div>
+            <div class="row margin5-top" style="margin-right: 0%; margin-left: 1%">
+                <span class="pull-left">Dewasa x1</span>
+                <span class="pull-right">Rp 1.500.000</span>
             </div>
-            <!-- content waktu -->
-            <div class="col-md-6">
-                <div class="row">&nbsp</div>
-                <div class="row">7 Juli 2017</div>
-                <div class="row">12.00</div>
-                <div class="row margin8-top">&nbsp</div>
-                <div class="row" style="margin-top:-12%;">&nbsp</div>
-                <div class="row">7 Juli 2017</div>
-                <div class="row">12.00</div>
+            <div class="row" style="margin-right: 0%; margin-left: 1%">
+                <span class="pull-left">Anak x1</span>
+                <span class="pull-right">Rp 1.500.000</span>
             </div>
-          </div>
-        </div> <!-- ct #panel pesawat2 -->
-
+            <div class="row" style="margin-right: 0%; margin-left: 1%">
+                <span class="pull-left">Bayi x1</span>
+                <span class="pull-right">Rp 70.000</span>
+            </div>
+        </div>
+        </div>
+      </div> <!-- ct accordion pesawat 1 -->
+    </div> <!-- close tag accordion -->
+    </div> <!-- ct panel default -->
+    <!-- total biaya -->
+    <div class="panel panel-default radius">
+      <div class="panel-body" style="background:#EFEFEF">
+        <center><span style="color: #0033A8"><strong>TOTAL BIAYA PERJALANAN</strong></span></center>
+        <br>
+        <p>
+          Keberangkatan
+          <span class="pull-right">Rp 1.900.000</span>
+        </p>
+        <p>
+          Kepulangan
+          <span class="pull-right">Rp 3.900.000</span>
+        </p>
+      </div>
+      <div class="panel-heading primary-blue radius">
+        <span><strong><h4>TOTAL</span>
+        <span style="margin-left: 45%">Rp 5.800.000</strong></h4></span>
       </div>
     </div>
-  </div>
-  <!-- ct Right Side -->
+  </div> <!-- ct Right Side -->
 </div> <!-- ct container POLL -->
 @stop
