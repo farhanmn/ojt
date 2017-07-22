@@ -185,6 +185,15 @@
 
       </div>
     </div>
+    
+    <div class="panel panel-default radius" style="border:0">
+      <div class="panel-body" style="background-color:#efefef; margin-top:7%">
+        <div class="checkbox small">
+        <label class="margin5-top" style="margin-top:1%"><input type="checkbox" value="">Gunakan HOT WALLET</label>
+      </div>
+      </div>
+    </div>
+    
   </div><!-- close tag potongan harga -->
 
   <!-- Button back -->
