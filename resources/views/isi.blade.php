@@ -129,7 +129,10 @@
 
       <!-- add child and inf -->
       <div class="panel-body margin5-trbl">
-        <div class="checkbox">
+        <div class="checkbox" style="margin-top:1%; padding-top: 0%">
+          <label>
+          <input type="checkbox" value=""> Sama dengan kontak
+          </label>
         </div>
         <div class="container-fluid row margin5-top">
           <div class="col-md-2">
