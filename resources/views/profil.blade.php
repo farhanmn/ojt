@@ -2,114 +2,100 @@
 @section('content')
 <div class="container margin5-top">
   <div class="col-md-8">
-      <h4>Informasi Personal</h4>
-    <div class="primary-blue line margin5-top"></div>
+    <div class="test"><h4 style="padding: 2% 0 2% 7%; margin: 0;color: #fff">Buat Akun Baru</h4></div>
     <div class="panel panel-default radius">
-      <div class="panel-body margin5">
-          <div class="col-md-2">
-            <div class="row">
-              Gelar
-            </div>
-            <div class="row">
-              <div class="dropdown">
-                <button style="height:26px;width:100%" class="btn btn-default dropdown-toggle radius" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  Tuan
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu radius" style="min-width:80px !important" aria-labelledby="dropdownMenu1">
-                  <li><a href="#">Tuan</a></li>
-                  <li><a href="#">Nyonya</a></li>
-                  <li><a href="#">Nona</a></li>
-                </ul>
-              </div>
-            </div>
-            <input type="tel" id="phone">
-          </div> <!-- ct col md-4 -->
-          <div class="col-md-10">
-            <div class="row">
-              Nama Lengkap
-            </div>
-            <div class="row">
-              <input style="width:100%" type="text" name="" value=""></input>
+      <div class="panel-body">
+          <div class="col-md-12">
+            <div class="form-group">
+              <span>Email</span>
+              <input type="text" class="form-control radius" id="usr" placeholder="ex: mail@gmail.com"/>
             </div>
           </div>
-          <!-- ct col-md-8 -->
-          <div class="col-md-12 margin5-top">
-            <div class="row">
-              Tanggal Lahir
-            </div>
-            <div class="row">
-              <input style="width:100%" type="text" name="" value=""></input>
+          <div class="col-md-12">
+            <div class="form-group">
+              <span>Password</span>
+              <input type="password" id="password" name="password" class="form-control radius" data-toggle="password">
             </div>
           </div>
-          <div class="col-md-2 margin5-top">
-            <div class="row">
-              Nomor Telepon
-            </div>
-            <div class="row">
-              <div class="dropdown">
-                <button style="height:26px;width:100%" class="btn btn-default dropdown-toggle radius" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  <span>+62</span>
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu radius" style="min-width:80px !important" aria-labelledby="dropdownMenu1">
-                  <li><a href="#">+62</a></li>
-                  <li><a href="#">+1</a></li>
-                  <li><a href="#">+2</a></li>
-                </ul>
-              </div>
-            </div>
-          </div> <!-- ct col md-4 -->
-          <div class="col-md-10 margin5-top">
-            <div class="row">&nbsp</div>
-            <div class="row">
-              <input style="width:100%" type="text" name="" value=""></input>
-            </div>
+          <div class="col-md-12">
+            <span>Masukkan Kode Captcha</span>
+						<span>{!! captcha_image_html('ContactCaptcha') !!}</span>
+				    <input type="text" class="form-control radius" style="margin-top:1%" id="inputCapcha">
           </div>
           <div class="col-md-12 margin5-top">
-            <div class="row">
-              Negara
-            </div>
-            <div class="row">
-              <div class="dropdown">
-                <button style="height:26px; min-width:100%" class="btn btn-default dropdown-toggle radius" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  <span class="pull-left" style="margin-top:-1%">Indonesia</span>
-                  <span class="caret pull-right" style="margin-top:1%"></span>
-                </button>
-                <ul class="dropdown-menu radius" aria-labelledby="dropdownMenu1">
-                  <li><a href="#">Indonesia</a></li>
-                  <li><a href="#">Afghanistan</a></li>
-                  <li><a href="#">Singapura</a></li>
-                </ul>
-              </div>
-            </div><!-- ct baris 2 -->
-          </div>
-          <div class="col-md-12 margin5-top">
-            <div class="row">
-              Negara Bagian / Provinsi
-            </div>
-            <div class="row">
-              <input style="width:100%" type="text" name="" value=""></input>
-            </div>
-          </div>
-          <div class="col-md-12 margin5-top">
-            <div class="row">
-              Kota
-            </div>
-            <div class="row">
-              <input style="width:100%" type="text" name="" value=""></input>
-            </div>
+            <input type="checkbox" name="" value="">
+            <span>Saya setuju dengan</span><label>&nbspSyarat dan Ketentuan</label>
           </div>
       </div>
     </div><!-- ct panel -->
-    <button type="button" class="btn btn-default primary-yellow" style="width:100%; margin-bottom:30%" name="button">Simpan</button>
-  </div><!-- ct col-md-8 -->
-  <!-- change photo profil -->
-  <div class="col-md-4 margin5-top">
-    <div class="foto margin5">
+    <button type="button" class="btn btn-primary-yel" style="width:100%" name="button">Daftar</button>
+		<div class="row margin5">
+			<!-- <hr>	<center>Atau</center><hr> -->
+			<center>
+			<div class="col-md-5" style="height:1px; background-color:#000; margin-top:1%">
 
+			</div>
+			<div class="col-md-2">
+				Atau
+			</div>
+			<div class="col-md-5" style="height:1px; background-color:#000; margin-top:1%">
+
+			</div>
+			</center>
+		</div>
+		<div class="row margin5">
+			<div class="col-md-6">
+					<button type="button" class="btn btn-primary" style="width:100%" name="button"><i class="fa fa-facebook-official"></i>&nbspDaftar dengan Facebook</button>
+			</div>
+			<div class="col-md-6">
+					<button type="button" class="btn btn-danger" style="width:100%" name="button"><i class="fa fa-google-plus"></i>&nbspDaftar dengan Google</button>
+			</div>
+		</div>
+  </div><!-- ct col-md-8 -->
+
+  <!-- Right Side -->
+  <div class="col-md-4 margin5-top">
+    <div class="row margin5-top">
+      <center>
+    	<div class="col-md-5">
+        <div class="circle primary-blue" style="border-radius:70%; height:70px; width:70px">
+          <img src="/img/ic-poin.png" style="margin-top:15%">
+        </div>
+    	</div>
+      </center>
+			<div class="col-md-7">
+				<strong style="color:#0033a8">Dapatkan Poin</strong><br>
+				<span class="small">Dapatkan poin setiap melakukan transaksi dengan memiliki akun</span>
+			</div>
+    </div><br><br>
+		<div class="row margin5-top">
+      <center>
+    	<div class="col-md-5">
+        <div class="circle primary-blue" style="border-radius:70%; height:70px; width:70px">
+          <img src="/img/ic-wallet.png" style="margin-top:15%">
+        </div>
+    	</div>
+      </center>
+			<div class="col-md-7">
+				<strong style="color:#0033a8">Hot Wallet</strong><br>
+				<span class="small">Anda akan mendapatkan kenyamanan berupa hot wallet ketika memiliki akun di citos.id</span><br>
+				<a class="small" href="#">Apa itu Hot Wallet?</a>
+			</div>
+    </div><br><br>
+		<div class="row margin5-top">
+      <center>
+    	<div class="col-md-5">
+        <div class="circle primary-blue" style="border-radius:70%; height:70px; width:70px">
+          <img src="/img/ic-time.png" style="margin-top:15%">
+        </div>
+    	</div>
+      </center>
+			<div class="col-md-7">
+				<strong style="color:#0033a8">Cepat dan Efisien</strong><br>
+				<span class="small">Dengan memiliki akun, Anda dapat memilih tiket dengan cepat</span>
+			</div>
     </div>
-    <button type="button" class="btn btn-default primary-blue" style="width:68%" name="button">Unggah Foto Profil</button>
   </div>
 </div>
-@stop
+
+@endsection
